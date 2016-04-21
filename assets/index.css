@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#text{
+    padding: 10px 10px 0;
+    width: 70%;
+    height: 600px;
+    border-right: 1px solid #333;
+    overflow: auto;
+    float: left;
+}
+#info{
+    padding-top: 10px;
+    width: 25%;
+    min-height: 110px;
+    float: right;
+}
+#result{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+#result th{
+    border-bottom: 1px solid #eee;
+}
+#result td, #result th{
+    padding: 8px 0;
+}
+#result tbody td{
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+#info .form-controller{
+    margin-top: 10px;
+}
+.stress{
+    animation: stress 1s forwards;
+    -webkit-animation: stress 1s forwards;
+    -moz-animation: stress 1s forwards;
+    -o-animation: stress 1s forwards;
+}
+.form-default{
+    padding: 8px 10px;
+    font-size: 15px;
+    line-height: 150%;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 194px;
+}
+.form-default:focus{
+    border-color: #66afe9;
+    outline: none;
+}
+.btn{
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 16px;
+    background: white;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.870588);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.btn-primary{
+    color: white;
+    background: #ff4083;
+}
+.btn:active {
+    background: rgb(232, 232, 232);
+}
+
+@media screen and (max-width: 440px){
+    #text {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px 10px 180px;
+        border: none;
+    }
+    #info{
+        box-sizing: border-box;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background: rgba(255,255,255,0.9);
+        padding: 10px;
+    }
+    #info .form-group{
+        display: -webkit-flex;
+        display: flex;
+    }
+    #info label{
+        width: 64px;
+        line-height: 38px;
+    }
+    #info .form-default{
+        -webkit-flex: 1;
+        flex: 1;
+    }
+}
+
+@keyframes stress{
+    from{}
+    to{background: #ee0;}
+}
+@-webkit-keyframes stress{
+    from{}
+    to{background: #ee0;}
+}
+@-moz-keyframes stress{
+    from{}
+    to {background: #ee0;}
+}
+@-o-keyframes stress{
+    from{}
+    to{background: #ee0;}
+}
